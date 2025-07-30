@@ -1,0 +1,9 @@
+[project]
+name = "openbb-demo"
+version = "0.1.0"
+description = "For Demo of OpenBB"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openbb>=4.1.3",
+]
