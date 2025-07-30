@@ -14,6 +14,7 @@ mkdir openbb-demo
 cd openbb-demo
 uv init
 ```
+Note, make sure the Project name differs from the project folder name.
 
 ## Code along and test out
 Install the basic module of `openbb` by:
