@@ -72,15 +72,15 @@ The matplotlib usually supports the following interactive backends:
 - __nbAgg/ipympl__: Backends designed for interactive plots within Jupyter Notebooks and other web-based environments.
 - __WebAgg__: A backend that serves plots via a web browser.
 
-A few tries enabled me figure out the easiest nackend is `qtagg` supported by Qt5. Here is the way to install the modules:
+A few tries enabled me figure out the easiest backend is `qtagg` supported by Qt5. Here is the way to install the modules:
 ```shell
 sudo apt-get install '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev
 ```
-then install the qt5 into uv venv as below:
+Then install the `qt5` into `uv` venv as below:
 ```shell
 uv add qt5
 ```
-Then create a simple `get_backend.py` as below:
+Finally, create a simple `get_backend.py` as below:
 ```python
 import matplotlib as mpl
 print(mpl.get_backend())
@@ -90,6 +90,7 @@ Run the `python` script to test out:
 ```shell
 uv run get_backend.py
 ```
+You should get an output like `qtagg`.
 
 ## License
 MIT
